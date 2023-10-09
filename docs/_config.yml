@@ -1,0 +1,62 @@
+################################################################################
+# site settings
+################################################################################
+
+title: Paul Danelli
+description: Experienced Ruby Developer
+taglong: Experienced Ruby Developer
+tagshort: Experienced Ruby Developer
+baseurl: ""
+permalink: pretty
+repo: https://github.com/prdanelli/prdanelli.github.io
+
+# author settings
+
+author:
+  name: Paul Danelli
+  email: prdanelli@gmail.com
+photo: /assets/jpg/photo.jpg
+
+# social media links
+
+social:
+  github: prdanelli
+  linkedin: prdanelli
+  stackoverflow: 3588645
+
+################################################################################
+# build settings
+################################################################################
+
+exclude:
+  - LICENSE
+  - README.md
+  - _README.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate-v2
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+whitelist:
+  - jekyll-sitemap
+
+sass:
+  sass_dir: _sass
+  style: compressed
+  sourcemap: never
+
+feed:
+  path: atom.xml
+
+autopages:
+  enabled: false
+
+pagination:
+  enabled: true
+  per_page: 1
+  sort_reverse: true
+  permalink: /:num/
+  title: ":title &middot; Page :num"
