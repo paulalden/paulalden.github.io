@@ -1,8 +1,17 @@
 <div id="particles-js" class="fullscreen">
   <div class="jumbotron text-center">
-    {% if site.photo %}
-      <img class="particles-photo" src="{{ site.photo }}" />
-    {% endif %}
+    <picture>
+      <img
+        class="particles-photo"
+        sizes="(max-width: 800px) 100vw, 800px"
+        srcset="assets/jpg/photo_grk5kw_c_scale,w_200.jpg 200w,
+          assets/jpg/photo_grk5kw_c_scale,w_489.jpg 489w,
+          assets/jpg/photo_grk5kw_c_scale,w_701.jpg 701w,
+          assets/jpg/photo_grk5kw_c_scale,w_793.jpg 793w,
+          assets/jpg/photo_grk5kw_c_scale,w_800.jpg 800w"
+          src="photo_grk5kw_c_scale,w_800.jpg"
+        alt="Image of Paul Danelli">
+    </picture>
 
     <h1 class="particles-title">{{ site.title }}</h1>
     <h1 class="particles-subtitle">{{ site.taglong }}</h1>
